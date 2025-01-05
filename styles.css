@@ -32,11 +32,10 @@ img {
 }
 
 .introduction p {
-    font-size: 1.25rem;
+    font-size: 1.21rem;
     font-weight: 400;
     color: #6C727F;
     width: 100%;
-    max-width: 504px;
     margin: 0 auto 16px;
 }
 
