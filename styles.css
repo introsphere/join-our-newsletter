@@ -1,0 +1,155 @@
+/* Global Styles */
+body {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.container {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    width: 100%;
+    max-width: 552px;
+    margin-top: 5rem;
+    text-align: center;
+    padding: 0 24px;
+}
+
+img {
+    margin-bottom: -2rem;
+}
+
+.container h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.introduction p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #6C727F;
+    width: 100%;
+    max-width: 504px;
+    margin: 0 auto 16px;
+}
+
+.form-example {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 0.75rem;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03), 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+    margin-top: 3.75rem;
+    padding: 24px 24px 1rem;
+    width: 100%;
+    max-width: 552px;
+    box-sizing: border-box;
+}
+
+#email {
+    width: 100%;
+    max-width: 504px;
+    padding: 1.25rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.75rem;
+    border: 1px solid #E5E7EB;
+    background-color: #f2f4f8;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    max-width: 504px;
+    padding: 1.25rem 0;
+    background-color: #284BCE;
+    color: #F9FAFB;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    border: none;
+}
+
+::placeholder {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #394150;
+}
+
+.form-note {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #394150;
+    margin-top: 16px;
+}
+
+/* Breakpoints for Responsive Design */
+
+/* 1024px Breakpoint */
+@media (max-width: 1024px) {
+    .container {
+        width: 80%;
+        /* Make container slightly smaller */
+        margin-top: 4rem;
+        /* Adjust top margin */
+    }
+
+    .form-example {
+        padding: 20px;
+        margin-top: 3rem;
+        /* Reduce margin from top */
+    }
+
+    #email,
+    button {
+        width: 100%;
+        max-width: 90%;
+        /* Adjust input and button width to be smaller */
+    }
+
+    .form-note {
+        font-size: 0.9rem;
+        /* Slightly smaller text for smaller screens */
+    }
+}
+
+/* 640px Breakpoint */
+@media (max-width: 640px) {
+    .container {
+        width: 100%;
+        /* Make the container full width on very small screens */
+        padding: 0 16px;
+        /* Add padding to the sides */
+    }
+
+    .form-example {
+        padding: 16px;
+        margin-top: 2.5rem;
+        /* Adjust margin from top */
+    }
+
+    #email,
+    button {
+        width: 100%;
+        max-width: 100%;
+        /* Make input and button full width */
+    }
+
+    .form-note {
+        font-size: 0.8rem;
+        /* Slightly smaller text */
+        margin-top: 12px;
+        /* Less margin between the form note */
+    }
+}
